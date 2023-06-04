@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://kit.fontawesome.com/11a2128676.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Elena Polyakova - Portfolio Website</title>
+</head>
+
+<!-- Navbar -->
+
+<!-- <body data-bs-spy="scroll" data-bs-target="#main-nav"> -->
+<body onload="init();" data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="50" tabindex="0">
+
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-success text-center" id="main-nav">
+    <div class="container">
+      <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" role="group" id="navbarCollapse">
+        <ul class="navbar-nav h5 me-auto mb-2 mb-lg-0 text-center font-main">
+          <li class="nav-item text">
+            <a href="#home" class="nav-link text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link text-white">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#my_projects" class="nav-link text-white">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about_me" class="nav-link text-white">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact_me" class="nav-link text-white">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+          <div class="d-flex justify-content-center">
+            <li class="nav-item">
+              <div class="p-3">
+                <a href="https://www.linkedin.com/in/elena-polyakova-381275206/">
+                  <i class="fab fa-linkedin fa-2x text-white"></i>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="p-3">
+                <a href="https://github.com/elena-polyakova2">
+                  <i class="fab fa-github fa-2x text-white"></i>
+                </a>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Home section -->
+    <section id="home" class="bg-white mt-4">
+      <div class="primary-overlay text-black">
+        <div class="container text-center">
+          <div class="row mt-4 pt-4">
+          </div>
+          <div class="row pt-5 pb-2 mt-2 text-start">
+            <div class="col-lg-8 my-2 rounded load-hidden font-main">
+              <h1 class="font-main me-my-5 pt-5">
+                Hello. Welcome to my portfolio page.
+              </h1>
+                <br />
+              <h1 class="font-main">My name is <span class="text-success">Elena Polyakova</span>.
+              </h1>
+              <h2 class="font-main me-my-5 py-4">I am the Web Developer.</h2>
+              <a href="#about_me" type="button" class="btn btn-outline-success btn-lg font-main">
+                Find Out More
+              </a>
+            </div>
+          <div class="col-lg-4 text-center">
+            <canvas id="demoCanvas" width="500" height="300" style="border: 1px solid lightgray;"></canvas>
+          </div>
+          </div>
+          <div class="row mt-2 pt-2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="bg-light text-center my-4 py-4">
+      <div class="container">
+        <div class="row my-4 py-4">
+          <div class="col">
+            <div class="info-header my-4">
+              <h1 class="pb-1">
+                My Skills
+              </h1>
+            </div>
+            <div class="pb-4 mb-4">
+              <h4>
+                Here are some programming languages and tools that I learned so far.
+              </h4>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-borderless align-middle">
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML 5 logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML 5" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS 3 logo" class="img-fluid icon_size" data-bs-toggle="tooltip" title="CSS 3" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="jQuery logo" class="img-fluid icon_size" data-bs-toggle="tooltip" title="jQuery" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap logo" class="img-fluid icon_size" data-bs-toggle="tooltip" title="Bootstrap" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="React logo" class="img-fluid icon_size" data-bs-toggle="tooltip" title="React" />
+                    </td>
+                  </tr>
+                  <tr class="h-150" style="height: 200px;">
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="php logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="php" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg" alt="Laravel logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="Laravel" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="Angular" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="NodeJS logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="NodeJS" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="GitHub logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="Java" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Android Studio" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="Figma" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="Adobe XD" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="Redux" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express JS logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="Express JS" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="npm" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="npm" />
+                    </td>
+                  </tr>
+                  <tr class="h-150" style="height: 200px;">
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="PotgreSQL" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" alt="Firebase logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="Firebase" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg" alt="GraphQL logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="GraphQL" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="Jest" />
+                    </td>
+                    <td>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift logo" class="img-fluid icon_size" data-bs-toggle="tooltip" data-bs-placement="top" title="Swift" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section-->
+    <section id="my_projects" class="pb-2 bg-white text-center my-4 py-4">
+    <div class="container">
+      <div class="row my-4 py-4">
+        <div class="col">
+          <div class="info-header my-4">
+            <h1 class="pb-1">
+              My Projects
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="https://www.freeiconspng.com/uploads/no-image-icon-15.png" width="200" alt="No Save Icon Format" />
+            <div class="caption">
+              <p>UI/UX design for iOS app.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="https://www.freeiconspng.com/uploads/no-image-icon-15.png" width="200" alt="No Save Icon Format" />
+            <div class="caption">
+              <p>iOS app.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="https://www.freeiconspng.com/uploads/no-image-icon-15.png" width="200" alt="No Save Icon Format" />
+            <div class="caption">
+              <p>Capstone project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="https://www.freeiconspng.com/uploads/no-image-icon-15.png" width="200" alt="No Save Icon Format" />
+            <div class="caption">
+              <p>Some other project.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="https://www.freeiconspng.com/uploads/no-image-icon-15.png" width="200" alt="No Save Icon Format" />
+            <div class="caption">
+              <p>Other project.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="https://www.freeiconspng.com/uploads/no-image-icon-15.png" width="200" alt="No Save Icon Format" />
+            <div class="caption">
+              <p>Other project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- About Me section-->
+    <section id="about_me" class="py-2 bg-light my-4 py-4">
+    <div class="primary-overlay text-black">
+      <div class="container">
+        <div class="row my-4 py-4 d-flex justify-content-center">
+          <div class="col-lg-3 align-self-center">
+            <div class="align-self-center">
+              <img src="img\my_image.png" alt="Elena's image" class="img-fluid img_fit" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="py-4 text-center">
+              About Me
+            </h1>
+            <div class="h5">
+              <p>Hi, I am Elena, a recent graduate and an aspiring web developer who loves
+                creating user-friendly and responsive websites.</p>
+
+              <p>I have always been interested in technology and how it can improve people’s lives.
+                I decided to pursue web development as a career because I enjoy designing and coding
+                websites that solve problems and meet users’ needs. Recently graduated with Advanced Diploma
+                from a 3-year Mobile Application Development program at Saint Clair College in Windsor,
+                I decided to focus on the web development. Since my graduation, I have completed several
+                online courses and projects to sharpen my skills and learn the latest technologies.
+                My goal is to gain more experience and knowledge in this field and become a professional web developer.</p>
+
+              <p>If you are looking for a dedicated and enthusiastic web developer, look no further. I would love to hear from you and discuss your project needs. You can reach me at elena_polyakova@yahoo.com or simply fill out the Contact form below.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Contact section  -->
+    <section id="contact_me" class="pt-5 my-4 py-4">
+    <div class="primary-overlay text-black">
+      <div class="container">
+        <div class="row d-flex justify-content-center my-4 py-4">
+          <div class="col-lg-6 text-center py-4">
+            <h1 class="pb-1">
+              Contact
+            </h1>
+            <p class="lead pb-4">
+              <b>Thank you for your time. Please contact me for any enquiries.</b>
+            </p>
+          </div>
+          <form class="pb-5 row justify-content-center contact-form was-validated">
+            <div class="card card-body pt-4" style="width: 800px;">
+              <div class="mb-3 pt-5 row justify-content-center">
+                <label for="inputName" class="col-sm-2 h5">Your Name*</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control is-valid" id="inputName"
+                  required>
+                </div>
+              </div>
+              <div class="mb-3 row justify-content-center">
+                <label for="inputEmail" class="col-sm-2 h5">Your Email</label>
+                <div class="col-sm-6">
+                  <input type="email" class="form-control is-valid" id="inputEmail" pattern="^[a-zA-Z0-9]+(\.[_a-zA-Z0-9]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,15})$" />
+                </div>
+              </div>
+              <div class="mb-3 row justify-content-center">
+                <label for="inputMessage" class="col-sm-2 h5">Your Message*</label>
+                <div class="col-sm-6">
+                  <textarea class="form-control is-valid" id="textareaMessage" rows="3" required></textarea>
+                </div>
+              </div>
+              <div class="d-grid py-5 justify-content-center">
+                <button type="submit" class="btn btn-success font-main btn-lg">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-success text-center text-white">
+    <div class="container p-4 pb-0">
+      <section>
+        <div class="row">
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Made by Elena Polyakova with Bootstrap and JavaScript, year of
+                <span id="year"></span></strong>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+body {
+  position: relative;
+}
+
+/* Extra small screens */
+@media only screen and (max-width: 600px) {
+  .img_fit {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
+
+/* Small screens */
+@media only screen and (min-width: 600px) {
+  .img_fit {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 768px) {
+  .img_fit {
+    max-width: 60%;
+    max-height: 60%;
+  }
+}
+
+/* Extra large screens */
+@media only screen and (min-width: 1200px) {
+  .img_fit {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+.icon_size {
+  width: 75px;
+  height: 75px;
+}
+
+.btn:hover {
+  background-color: #1dacd6;
+  border-color: #1dacd6;
+  border-radius: 300px;
+  font-weight: 700;
+}
+
+#inputName, #inputEmail, #textareaMessage {
+  border-color: black;
+}
+
+.font-main {
+  font-weight: 600;
+}
+/* .scrollspy-example {
+    position: relative;
+    height: 1200px;
+    overflow: auto;
+} */

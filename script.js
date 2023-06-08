@@ -6,9 +6,9 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
 })
 
 //send email
-const senderName = document.getElementById('inputName').value;
-const email = document.getElementById('inputEmail').value;
-const textMessage = document.getElementById('textareaMessage').value;
+const senderName = document.getElementById('inputName');
+const email = document.getElementById('inputEmail');
+const textMessage = document.getElementById('textareaMessage');
 const submit = document.getElementsByClassName('contact-form')[0];
 
 submit.addEventListener('submit', (event) => {
@@ -23,11 +23,13 @@ submit.addEventListener('submit', (event) => {
     To: 'elena311979@gmail.com',
     From: 'elena311979@gmail.com',
     Subject: "Message From Contact Form",
-    Body: `Name: ${senderName} <br />
-    Email: ${email} <br />
-    Message: ${textMessage}`
+    Body: `Name: ${senderName.value} <br />
+    Email: ${email.value} <br />
+    Message: ${textMessage.value}`
   }).then (
     clearAndAlertOnSubmit(),
+    console.log(senderName.value, email.value, textMessage.value),
+    submit.reset()
   )
 })
 
@@ -39,11 +41,7 @@ async function clearAndAlertOnSubmit() {
       confirmButtonText: 'Ok'
       })}
   )
-  submit.reset() = await alertOnSubmit;
 }
-
-//easeljs
-
 
 
 //define scrollspy

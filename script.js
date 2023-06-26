@@ -36,32 +36,26 @@ submit.addEventListener('submit', (event) => {
 async function clearAndAlertOnSubmit() {
   let alertOnSubmit = new Promise(function(notify) {
     notify = Swal.fire({
-      text: 'Your message sent successfully. Thank you',
+      text: 'Your message was sent successfully. Thank you',
       icon: 'success',
       confirmButtonText: 'Ok'
       })}
   )
 }
 
+//animation on scroll
 
-//define scrollspy
-// $('body').scrollspy({ target: '#main-nav' })
-//
-// //make smooth Scrolling
-// $('#main-nav a').on('click', function (event) {
-//   if (this.hash !== '') {
-//     event.preventDefault()
-//
-//     const hash = this.hash
-//
-//     $('html, body').animate(
-//       {
-//         scrollTop: $(hash).offset().top
-//       },
-//       800,
-//       function () {
-//         window.location.hash = hash
-//       }
-//     )
-//   }
-// })
+
+
+
+
+
+
+// dark mode\light mode
+
+function darkmodeandlightmode() {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+  let toggleIcon = document.getElementById("toggle-icon");
+  toggleIcon.classList.toggle("bi-sun-fill");
+ }

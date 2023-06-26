@@ -1,5 +1,5 @@
 :root {
-  --typingSpeed: 6s;
+  --typingSpeed: 3s;
 }
 
 /* get rid of white space on the right */
@@ -53,7 +53,8 @@ and (max-width: 600px)
   height: 75px;
 }
 
-.btn:hover {
+.btn:hover, 
+.dark-mode .btn:hover {
   background-color: #1dacd6;
   border-color: #1dacd6;
   border-radius: 300px;
@@ -126,6 +127,12 @@ h1, #findOutButton {
   animation: buttonMovement 2s ease calc(var(--typingSpeed) + 2s) forwards;
 }
 
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+} 
+
 @keyframes moveToTheLeft {
  
   from {
@@ -156,7 +163,7 @@ h1, #findOutButton {
   }
 
   100% {
-    color: darkgreen;
+    color: #189ab4;
   }
 }
 
@@ -171,8 +178,52 @@ h1, #findOutButton {
     opacity: 1;
   }
 }
-/* .scrollspy-example {
-    position: relative;
-    height: 1200px;
-    overflow: auto;
-} */
+
+.navbar {
+  background-color: darkgreen;
+}
+
+.dark-mode {
+  background-color: #000c66; 
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #050a30;
+}
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode p,
+.dark-mode label,
+.dark-mode ::placeholder {
+  color: white;
+}
+.dark-mode input, 
+.dark-mode textarea {
+  background-color: grey;
+}
+
+.dark-mode #webDeveloper::before,
+.dark-mode .card {
+  background: #000c66;
+}
+.dark-mode #webDeveloper::after {
+  background: white;
+}
+
+.dark-mode #findOutButton {
+  color: #189ab4;
+}
+
+.dark-mode #findOutButton:hover {
+ color: #050a30;
+}
+
+.dark-mode .btn-success,
+.dark-mode #main-footer {
+  background-color: #050a30;
+  border-color: #050a30;
+}
+
+

@@ -112,14 +112,14 @@ h1, #findOutButton {
 
 #webDeveloper::before {
   background: white;
-  animation: typingEffect var(--typingSpeed) steps(21) 2s forwards;
+  animation: typingEffect var(--typingSpeed) steps(32) 2s forwards;
 }
 
 #webDeveloper::after {
   width: 0.1em;
   background: black;
-  animation: typingEffect var(--typingSpeed) steps(21) 2s forwards,
-    cursorBlink 700ms steps(21) infinite;
+  animation: typingEffect var(--typingSpeed) steps(32) 2s forwards,
+    cursorBlink 700ms steps(32) forwards;
 }
 
 #findOutButton {

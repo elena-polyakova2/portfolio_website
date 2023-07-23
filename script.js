@@ -52,7 +52,6 @@ async function clearAndAlertOnSubmit() {
 
 
 // dark mode\light mode
-
 function darkmodeandlightmode() {
   let element = document.body;
   element.classList.toggle("dark-mode");

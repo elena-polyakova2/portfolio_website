@@ -10,6 +10,6 @@ This is my personal Full Stack Web Developer portfolio. Made with Bootstrap, swe
 - Responsive design
 - JavaScript for the current year
 - Skills area
-- About Me area
 - Project area
+- About Me area
 - Contact form

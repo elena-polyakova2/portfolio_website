@@ -9,6 +9,7 @@ This is my personal Full Stack Web Developer portfolio. Made with Bootstrap, swe
 - Light/Dark theme toggle
 - Responsive design
 - JavaScript for the current year
+- Skills area
 - About Me area
 - Project area
 - Contact form
